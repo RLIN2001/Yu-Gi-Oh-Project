@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck Yu Gi Oh</title>
+   <link rel="stylesheet" href="css/style.css">
+   <!-- <link rel="stylesheet" href="assets/css/normalize.css"> -->
+   <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+   <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
+</head>
+
+<body background="sfondo.jpg">
+  
+
+
+  <nav class="navbar">
+    <div class="logo_header">
+      <a href="#"  onClick="window.location.reload()" class="logo"><img src="images/icon.jpg" width="200" height="50"></a>
+      <button class="navbar_toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+    </div>
+
+   
+  
+
+
+    <ul class="main_nav">
+      <li>
+        <a href="#" onclick="allcard()" class="nav_links">All Card</a>
+      </li>
+      <li>
+        <a href="#" onclick="alltrap()" class="nav_links">All Trap card</a>
+      </li>
+      <li>
+        <a href="#" onclick="allspell()" class="nav_links">All Spell Card</a>
+      </li>
+      <li>
+        <a href="#" onclick="allmonster()" class="nav_links">All Monster</a>
+      </li>
+      <li>
+        <a href="#" onclick="rd()" class="nav_links">Random Card</a>
+      </li>
+      <li>
+        <a href="about.html" class="nav_links">About</a>
+      </li>
+
+    
+
+    </ul>
+      
+  </nav>
+
+
+  <div id="myModal" class="modal">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <img src="images/icon.jpg"></img>
+      </div>
+      <div class="modal-body" id="info">
+    
+      </div>
+      <div class="modal-footer">
+        <h3>__</h3>
+      </div>
+    </div>
+  
+  </div>
+  
+
+
+<br><br>
+
+
+
+<div style="min-height:100vh; display:flex; flex-direction:column; 
+justify-content:space-between;"
+>
+<div class="app">
+  <section class="header-section container">
+  
+       <form class="form" id="form" >
+           
+      <input type="text" name="card" id="card" placeholder="Cerca il nome della carta">
+
+      <button type="submit">Click Me!</button>
+    
+    </form>
+    
+      <span class="msg"></span>
+  </section>
+  <br>
+  <section class="ajax-section container">
+    <ul class="cards list-reset"></ul>
+  </section>
+</div>
+
+
+<footer>
+<div class="copyright-text">
+  <p>Copyright &copy; 2022, All Right Reserved___Riccardo Lin</p>
+</div>
+</footer>
+
+</div>
+
+  
+  <script src="js/main.js"></script>
+
+
+
+</body>
+</html>
