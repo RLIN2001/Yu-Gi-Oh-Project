@@ -1,0 +1,46 @@
+
+@font-face {
+  font-family: pop;
+  src: url(../fonts/Poppins-ExtraLight.ttf);
+}
+
+
+body{
+    text-align: center;
+
+  }
+
+
+ 
+   .logo{
+     margin-left: 5%;
+     color: #ffffff;
+     font-size: 25px;
+     font-weight: bold;
+   }
+ 
+  
+   .logo_header{
+     display: flex;
+     margin-left: 2%;
+   }
+   
+ 
+   .navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: black;
+    font-size: 20px;
+ 
+   }
+
+   p,h3{
+    color:white;
+    font-family:pop;
+   }
+     
+ 
+   
